@@ -1,0 +1,6 @@
+framework module Pods_Rakuten_assisgnment {
+  umbrella header "Pods-Rakuten_assisgnment-umbrella.h"
+
+  export *
+  module * { export * }
+}

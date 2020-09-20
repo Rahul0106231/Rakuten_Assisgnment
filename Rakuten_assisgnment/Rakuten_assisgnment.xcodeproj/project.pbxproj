@@ -3,18 +3,30 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7924908B2092EFB8CF4D8D8B /* Pods_Rakuten_assisgnment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 020C069DAD7C639372BA6FD1 /* Pods_Rakuten_assisgnment.framework */; };
 		EC4B17E3251489330015FA2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4B17E2251489330015FA2A /* AppDelegate.swift */; };
 		EC4B17E5251489330015FA2A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4B17E4251489330015FA2A /* SceneDelegate.swift */; };
-		EC4B17E7251489330015FA2A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4B17E6251489330015FA2A /* ViewController.swift */; };
+		EC4B17E7251489330015FA2A /* MapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4B17E6251489330015FA2A /* MapsViewController.swift */; };
 		EC4B17EA251489330015FA2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC4B17E8251489330015FA2A /* Main.storyboard */; };
 		EC4B17ED251489330015FA2A /* Rakuten_assisgnment.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EC4B17EB251489330015FA2A /* Rakuten_assisgnment.xcdatamodeld */; };
 		EC4B17EF251489360015FA2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC4B17EE251489360015FA2A /* Assets.xcassets */; };
 		EC4B17F2251489360015FA2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC4B17F0251489360015FA2A /* LaunchScreen.storyboard */; };
 		EC4B17FD251489370015FA2A /* Rakuten_assisgnmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4B17FC251489370015FA2A /* Rakuten_assisgnmentTests.swift */; };
+		EC4B182B2517310B0015FA2A /* MapsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4B182A2517310B0015FA2A /* MapsViewModel.swift */; };
+		EC4B182D2517311B0015FA2A /* MapsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4B182C2517311B0015FA2A /* MapsRepository.swift */; };
+		EC4B182F251731320015FA2A /* APIServicesClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4B182E251731320015FA2A /* APIServicesClient.swift */; };
+		EC4B1831251731460015FA2A /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4B1830251731460015FA2A /* CoreDataManager.swift */; };
+		EC4B1834251733D10015FA2A /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4B1833251733D10015FA2A /* AppConstants.swift */; };
+		EC4B183725173BBF0015FA2A /* GetLocationsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4B183625173BBF0015FA2A /* GetLocationsRequest.swift */; };
+		EC4B183925173BE00015FA2A /* GetCoordinatesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4B183825173BE00015FA2A /* GetCoordinatesRequest.swift */; };
+		EC4B183B25174BB50015FA2A /* RakutenLocations.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4B183A25174BB50015FA2A /* RakutenLocations.swift */; };
+		EC4B183D251795A60015FA2A /* RakutenMarkerUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4B183C251795A60015FA2A /* RakutenMarkerUIModel.swift */; };
+		EC4B183F25179DE40015FA2A /* GeocodedLocations.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4B183E25179DE40015FA2A /* GeocodedLocations.swift */; };
+		F51E2B3E59C619599536ABFD /* Pods_Rakuten_assisgnmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27C55CA8C99F5BDFEB31743B /* Pods_Rakuten_assisgnmentTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,10 +40,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		020C069DAD7C639372BA6FD1 /* Pods_Rakuten_assisgnment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rakuten_assisgnment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		27C55CA8C99F5BDFEB31743B /* Pods_Rakuten_assisgnmentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rakuten_assisgnmentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AC5E431A8C49A533A744E00 /* Pods-Rakuten_assisgnment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rakuten_assisgnment.release.xcconfig"; path = "Target Support Files/Pods-Rakuten_assisgnment/Pods-Rakuten_assisgnment.release.xcconfig"; sourceTree = "<group>"; };
+		46C7679EC3229D057822C618 /* Pods-Rakuten_assisgnmentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rakuten_assisgnmentTests.release.xcconfig"; path = "Target Support Files/Pods-Rakuten_assisgnmentTests/Pods-Rakuten_assisgnmentTests.release.xcconfig"; sourceTree = "<group>"; };
+		918993A86B4CC33C9F53A6D0 /* Pods-Rakuten_assisgnment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rakuten_assisgnment.debug.xcconfig"; path = "Target Support Files/Pods-Rakuten_assisgnment/Pods-Rakuten_assisgnment.debug.xcconfig"; sourceTree = "<group>"; };
+		B5B0000EEDC0577FEF483EC7 /* Pods-Rakuten_assisgnmentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rakuten_assisgnmentTests.debug.xcconfig"; path = "Target Support Files/Pods-Rakuten_assisgnmentTests/Pods-Rakuten_assisgnmentTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EC4B17DF251489330015FA2A /* Rakuten_assisgnment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rakuten_assisgnment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC4B17E2251489330015FA2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC4B17E4251489330015FA2A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EC4B17E6251489330015FA2A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EC4B17E6251489330015FA2A /* MapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsViewController.swift; sourceTree = "<group>"; };
 		EC4B17E9251489330015FA2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EC4B17EC251489330015FA2A /* Rakuten_assisgnment.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Rakuten_assisgnment.xcdatamodel; sourceTree = "<group>"; };
 		EC4B17EE251489360015FA2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -40,6 +58,16 @@
 		EC4B17F8251489370015FA2A /* Rakuten_assisgnmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Rakuten_assisgnmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC4B17FC251489370015FA2A /* Rakuten_assisgnmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rakuten_assisgnmentTests.swift; sourceTree = "<group>"; };
 		EC4B17FE251489370015FA2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC4B182A2517310B0015FA2A /* MapsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsViewModel.swift; sourceTree = "<group>"; };
+		EC4B182C2517311B0015FA2A /* MapsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsRepository.swift; sourceTree = "<group>"; };
+		EC4B182E251731320015FA2A /* APIServicesClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServicesClient.swift; sourceTree = "<group>"; };
+		EC4B1830251731460015FA2A /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		EC4B1833251733D10015FA2A /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		EC4B183625173BBF0015FA2A /* GetLocationsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetLocationsRequest.swift; sourceTree = "<group>"; };
+		EC4B183825173BE00015FA2A /* GetCoordinatesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCoordinatesRequest.swift; sourceTree = "<group>"; };
+		EC4B183A25174BB50015FA2A /* RakutenLocations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RakutenLocations.swift; sourceTree = "<group>"; };
+		EC4B183C251795A60015FA2A /* RakutenMarkerUIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RakutenMarkerUIModel.swift; sourceTree = "<group>"; };
+		EC4B183E25179DE40015FA2A /* GeocodedLocations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeocodedLocations.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7924908B2092EFB8CF4D8D8B /* Pods_Rakuten_assisgnment.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,18 +83,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F51E2B3E59C619599536ABFD /* Pods_Rakuten_assisgnmentTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		063BA02F15B054077C842DCB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				020C069DAD7C639372BA6FD1 /* Pods_Rakuten_assisgnment.framework */,
+				27C55CA8C99F5BDFEB31743B /* Pods_Rakuten_assisgnmentTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		987C796B58A0B4A08D747D7E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				918993A86B4CC33C9F53A6D0 /* Pods-Rakuten_assisgnment.debug.xcconfig */,
+				3AC5E431A8C49A533A744E00 /* Pods-Rakuten_assisgnment.release.xcconfig */,
+				B5B0000EEDC0577FEF483EC7 /* Pods-Rakuten_assisgnmentTests.debug.xcconfig */,
+				46C7679EC3229D057822C618 /* Pods-Rakuten_assisgnmentTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		EC4B17D6251489330015FA2A = {
 			isa = PBXGroup;
 			children = (
 				EC4B17E1251489330015FA2A /* Rakuten_assisgnment */,
 				EC4B17FB251489370015FA2A /* Rakuten_assisgnmentTests */,
 				EC4B17E0251489330015FA2A /* Products */,
+				987C796B58A0B4A08D747D7E /* Pods */,
+				063BA02F15B054077C842DCB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,9 +133,15 @@
 		EC4B17E1251489330015FA2A /* Rakuten_assisgnment */ = {
 			isa = PBXGroup;
 			children = (
+				EC4B1832251733BC0015FA2A /* Common */,
+				EC4B182925171A050015FA2A /* DataBase */,
+				EC4B1828251719FE0015FA2A /* Models */,
+				EC4B1827251719EC0015FA2A /* APIClient */,
+				EC4B1826251719DE0015FA2A /* Repostories */,
+				EC4B1825251719D10015FA2A /* ViewModels */,
 				EC4B17E2251489330015FA2A /* AppDelegate.swift */,
 				EC4B17E4251489330015FA2A /* SceneDelegate.swift */,
-				EC4B17E6251489330015FA2A /* ViewController.swift */,
+				EC4B17E6251489330015FA2A /* MapsViewController.swift */,
 				EC4B17E8251489330015FA2A /* Main.storyboard */,
 				EC4B17EE251489360015FA2A /* Assets.xcassets */,
 				EC4B17F0251489360015FA2A /* LaunchScreen.storyboard */,
@@ -102,6 +160,66 @@
 			path = Rakuten_assisgnmentTests;
 			sourceTree = "<group>";
 		};
+		EC4B1825251719D10015FA2A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				EC4B182A2517310B0015FA2A /* MapsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		EC4B1826251719DE0015FA2A /* Repostories */ = {
+			isa = PBXGroup;
+			children = (
+				EC4B182C2517311B0015FA2A /* MapsRepository.swift */,
+			);
+			path = Repostories;
+			sourceTree = "<group>";
+		};
+		EC4B1827251719EC0015FA2A /* APIClient */ = {
+			isa = PBXGroup;
+			children = (
+				EC4B183525173B980015FA2A /* Requests */,
+				EC4B182E251731320015FA2A /* APIServicesClient.swift */,
+			);
+			path = APIClient;
+			sourceTree = "<group>";
+		};
+		EC4B1828251719FE0015FA2A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EC4B183A25174BB50015FA2A /* RakutenLocations.swift */,
+				EC4B183C251795A60015FA2A /* RakutenMarkerUIModel.swift */,
+				EC4B183E25179DE40015FA2A /* GeocodedLocations.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EC4B182925171A050015FA2A /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+				EC4B1830251731460015FA2A /* CoreDataManager.swift */,
+			);
+			path = DataBase;
+			sourceTree = "<group>";
+		};
+		EC4B1832251733BC0015FA2A /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				EC4B1833251733D10015FA2A /* AppConstants.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		EC4B183525173B980015FA2A /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				EC4B183625173BBF0015FA2A /* GetLocationsRequest.swift */,
+				EC4B183825173BE00015FA2A /* GetCoordinatesRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -109,9 +227,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EC4B1801251489370015FA2A /* Build configuration list for PBXNativeTarget "Rakuten_assisgnment" */;
 			buildPhases = (
+				1A963769239972E07C52A5D8 /* [CP] Check Pods Manifest.lock */,
 				EC4B17DB251489330015FA2A /* Sources */,
 				EC4B17DC251489330015FA2A /* Frameworks */,
 				EC4B17DD251489330015FA2A /* Resources */,
+				396CE806E4EA79BA19B8C66D /* [CP] Embed Pods Frameworks */,
+				3BD30DD45C7BE3F9C8008B37 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -126,6 +247,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EC4B1804251489370015FA2A /* Build configuration list for PBXNativeTarget "Rakuten_assisgnmentTests" */;
 			buildPhases = (
+				01DED6F9B8999DAB24CAB8BE /* [CP] Check Pods Manifest.lock */,
 				EC4B17F4251489370015FA2A /* Sources */,
 				EC4B17F5251489370015FA2A /* Frameworks */,
 				EC4B17F6251489370015FA2A /* Resources */,
@@ -198,14 +320,105 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		01DED6F9B8999DAB24CAB8BE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Rakuten_assisgnmentTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1A963769239972E07C52A5D8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Rakuten_assisgnment-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		396CE806E4EA79BA19B8C66D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Rakuten_assisgnment/Pods-Rakuten_assisgnment-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Rakuten_assisgnment/Pods-Rakuten_assisgnment-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Rakuten_assisgnment/Pods-Rakuten_assisgnment-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3BD30DD45C7BE3F9C8008B37 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Rakuten_assisgnment/Pods-Rakuten_assisgnment-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Rakuten_assisgnment/Pods-Rakuten_assisgnment-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Rakuten_assisgnment/Pods-Rakuten_assisgnment-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EC4B17DB251489330015FA2A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC4B17E7251489330015FA2A /* ViewController.swift in Sources */,
+				EC4B182F251731320015FA2A /* APIServicesClient.swift in Sources */,
+				EC4B1834251733D10015FA2A /* AppConstants.swift in Sources */,
+				EC4B183F25179DE40015FA2A /* GeocodedLocations.swift in Sources */,
+				EC4B17E7251489330015FA2A /* MapsViewController.swift in Sources */,
+				EC4B183D251795A60015FA2A /* RakutenMarkerUIModel.swift in Sources */,
+				EC4B183B25174BB50015FA2A /* RakutenLocations.swift in Sources */,
+				EC4B182B2517310B0015FA2A /* MapsViewModel.swift in Sources */,
 				EC4B17E3251489330015FA2A /* AppDelegate.swift in Sources */,
+				EC4B183725173BBF0015FA2A /* GetLocationsRequest.swift in Sources */,
+				EC4B183925173BE00015FA2A /* GetCoordinatesRequest.swift in Sources */,
 				EC4B17ED251489330015FA2A /* Rakuten_assisgnment.xcdatamodeld in Sources */,
+				EC4B182D2517311B0015FA2A /* MapsRepository.swift in Sources */,
+				EC4B1831251731460015FA2A /* CoreDataManager.swift in Sources */,
 				EC4B17E5251489330015FA2A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -364,6 +577,7 @@
 		};
 		EC4B1802251489370015FA2A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 918993A86B4CC33C9F53A6D0 /* Pods-Rakuten_assisgnment.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -382,6 +596,7 @@
 		};
 		EC4B1803251489370015FA2A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AC5E431A8C49A533A744E00 /* Pods-Rakuten_assisgnment.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -400,6 +615,7 @@
 		};
 		EC4B1805251489370015FA2A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5B0000EEDC0577FEF483EC7 /* Pods-Rakuten_assisgnmentTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -422,6 +638,7 @@
 		};
 		EC4B1806251489370015FA2A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46C7679EC3229D057822C618 /* Pods-Rakuten_assisgnmentTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

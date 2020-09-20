@@ -1,0 +1,18 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Rakuten_assisgnment' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+  pod 'Alamofire', '~> 5.2'
+  pod 'GoogleMaps','= 3.9.0'
+  pod 'GooglePlaces'
+  pod "KRProgressHUD"
+  # Pods for Rakuten_assisgnment
+
+  target 'Rakuten_assisgnmentTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
