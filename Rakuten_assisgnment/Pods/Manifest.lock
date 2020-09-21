@@ -7,23 +7,31 @@ PODS:
     - GoogleMaps/Base
   - GooglePlaces (3.9.0):
     - GoogleMaps/Base (= 3.9.0)
+  - KRActivityIndicatorView (3.0.5)
+  - KRProgressHUD (3.4.5):
+    - KRActivityIndicatorView (= 3.0.5)
 
 DEPENDENCIES:
   - Alamofire (~> 5.2)
   - GoogleMaps (= 3.9.0)
   - GooglePlaces
+  - KRProgressHUD
 
 SPEC REPOS:
   trunk:
     - Alamofire
     - GoogleMaps
     - GooglePlaces
+    - KRActivityIndicatorView
+    - KRProgressHUD
 
 SPEC CHECKSUMS:
   Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
   GoogleMaps: 4b5346bddfe6911bb89155d43c903020170523ac
   GooglePlaces: 1634d019549b969d40fe0ccb0b9513055adebe01
+  KRActivityIndicatorView: 912bc0413d98340f384b12a4e1e6aa8f42fb377d
+  KRProgressHUD: df4cdc3a1baf708d4276a089ee34d133fa9a6f3e
 
-PODFILE CHECKSUM: 0a6d00949645508069b80034848f9a92d9b6967f
+PODFILE CHECKSUM: 04adc627690f090204c68f75102d917250aaf9ba
 
 COCOAPODS: 1.9.3
