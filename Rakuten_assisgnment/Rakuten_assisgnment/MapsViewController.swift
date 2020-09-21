@@ -37,6 +37,11 @@ class MapsViewController: UIViewController ,ViewModelDelegate {
         for rakutenUIModel:RakutenMarkerUIModel in mapsUIModel{
             
             if let latitude = rakutenUIModel.latitude ,let longitude = rakutenUIModel.longitude {
+                
+                // If you want to show more content or customise the marker , We need to use
+                // custom marker which can display the title , description and image as well.
+                // The model contains the image url as well which can be used to retrive the image, but in the interest of time using a defaultmarker
+                
                 let marker = GMSMarker()
                 marker.position = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
                 marker.title = rakutenUIModel.locationItem?.properties?.name
@@ -55,6 +60,11 @@ class MapsViewController: UIViewController ,ViewModelDelegate {
             if let latitude = rakutenDatabaseModel.latitude , let longitude = rakutenDatabaseModel.longitude  {
                 
                 if(latitude != 0 && longitude != 0) {
+                  
+                  // If you want to show more content or customise the marker , We need to use
+                  // custome marker which can display the title , description and image as well.
+                  // The model contains the image url , but in the interest of time using a defaultmarker
+                    
                   let marker = GMSMarker()
                   marker.position = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
                   marker.title = rakutenDatabaseModel.name
