@@ -81,13 +81,19 @@ final class CoreDataManager{
         }
         
         let rakutenDataBaseModel = RakutenLocationsModel(entity: entity, insertInto:backgroundContext)
-        rakutenDataBaseModel.latitude = rakutenUIModel.latitude!
-        rakutenDataBaseModel.longitude = rakutenUIModel.longitude!
-        rakutenDataBaseModel.city = rakutenUIModel.locationItem?.properties.cityName
-        rakutenDataBaseModel.placedescription = rakutenUIModel.locationItem?.properties.shortDescription
-        rakutenDataBaseModel.region = rakutenUIModel.locationItem?.properties.regionName
-        rakutenDataBaseModel.country = rakutenUIModel.locationItem?.properties.countryCode
-        rakutenDataBaseModel.imageUrl = rakutenUIModel.locationItem?.properties.profileImageURL
+        if let latitude = rakutenUIModel.latitude{
+            rakutenDataBaseModel.latitude = latitude
+        }
+        if let longitude = rakutenUIModel.longitude{
+            rakutenDataBaseModel.longitude = longitude
+        }
+        
+        rakutenDataBaseModel.name = rakutenUIModel.locationItem?.properties?.name
+        rakutenDataBaseModel.city = rakutenUIModel.locationItem?.properties?.cityName
+        rakutenDataBaseModel.placedescription = rakutenUIModel.locationItem?.properties?.shortDescription
+        rakutenDataBaseModel.region = rakutenUIModel.locationItem?.properties?.regionName
+        rakutenDataBaseModel.country = rakutenUIModel.locationItem?.properties?.countryCode
+        rakutenDataBaseModel.imageUrl = rakutenUIModel.locationItem?.properties?.profileImageURL
         
         do{
           try self.saveBackgroundContext()
@@ -95,6 +101,39 @@ final class CoreDataManager{
         catch(let error){
             print("error in saving the object \(error.localizedDescription)")
         }
+    }
+    
+    func fetchUIModelEntities()-> [RakutenMarkerUIDatabaseModel]?{
+        
+        var rakutenDataModels:[RakutenLocationsModel] = [RakutenLocationsModel]()
+        var rakutenUIModels:[RakutenMarkerUIDatabaseModel] = [RakutenMarkerUIDatabaseModel]()
+        do {
+            let request = NSFetchRequest<NSFetchRequestResult>.init(entityName:"RakutenLocationsModel")
+            
+            rakutenDataModels = try viewContext.fetch(request) as! [RakutenLocationsModel]
+            if(rakutenDataModels.count == 0){
+                return nil
+            }
+            else {
+                for rakutenDataModel in rakutenDataModels {
+                    var rakutenUIModel = RakutenMarkerUIDatabaseModel()
+                    rakutenUIModel.name = rakutenDataModel.name
+                    rakutenUIModel.latitude = rakutenDataModel.latitude
+                    rakutenUIModel.longitude = rakutenDataModel.longitude
+                    rakutenUIModel.city = rakutenDataModel.city
+                    rakutenUIModel.country = rakutenDataModel.country
+                    rakutenUIModel.region = rakutenDataModel.region
+                    rakutenUIModel.placeDescription = rakutenDataModel.placedescription ?? "NA"
+                    rakutenUIModel.profileImageuRL = rakutenDataModel.imageUrl
+                    rakutenUIModels.append(rakutenUIModel)
+                }
+            }
+        }
+        catch(let error){
+            print("Error while retrieving data from DB \(error.localizedDescription)")
+            return nil
+        }
+        return rakutenUIModels
     }
     
 }

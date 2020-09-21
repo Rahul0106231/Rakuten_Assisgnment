@@ -19,24 +19,14 @@ class MapsViewController: UIViewController ,ViewModelDelegate {
         // Do any additional setup after loading the view.
         mapsViewModel.delegate = self
         mapsViewModel.getRakutenLocationsData()
-        let defaultPosition:CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: -33.86, longitude: 151.20)
+        
+        //Put the camera to a default Position Until the data comes back
+        let defaultPosition:CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: 36.77, longitude: -119.40)
         let camera = GMSCameraPosition.camera(withLatitude: defaultPosition.latitude, longitude: defaultPosition.longitude, zoom: 3.0)
         self.mapView = GMSMapView.map(withFrame: self.view.frame, camera: camera)
         self.view.addSubview(self.mapView!)
         
     }
-    
-    func setupGoogleMap(){
-        
-        // Creates a marker in the center of the map.
-        let marker = GMSMarker()
-        marker.position = CLLocationCoordinate2D(latitude: -33.86, longitude: 151.20)
-        marker.title = "Sydney"
-        marker.snippet = "Australia"
-        marker.map = mapView
-        
-    }
-    
     
     func dataRetrievedSuccesfully(mapsUIModel:[RakutenMarkerUIModel]){
         
@@ -45,9 +35,28 @@ class MapsViewController: UIViewController ,ViewModelDelegate {
             if let latitude = rakutenUIModel.latitude ,let longitude = rakutenUIModel.longitude {
                 let marker = GMSMarker()
                 marker.position = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
-                marker.title = rakutenUIModel.locationItem?.properties.name
-                marker.snippet = rakutenUIModel.locationItem?.properties.shortDescription
+                marker.title = rakutenUIModel.locationItem?.properties?.name
+                marker.snippet = rakutenUIModel.locationItem?.properties?.shortDescription
                 marker.map = self.mapView
+            }
+            
+        }
+        
+    }
+    
+    func dataRetrievedSuccesfullyFromDatabase(mapsDatamodel:[RakutenMarkerUIDatabaseModel]){
+        
+        for rakutenDatabaseModel:RakutenMarkerUIDatabaseModel in mapsDatamodel {
+            if let latitude = rakutenDatabaseModel.latitude , let longitude = rakutenDatabaseModel.longitude  {
+                
+                if(latitude != 0 && longitude != 0) {
+                  let marker = GMSMarker()
+                  marker.position = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+                  marker.title = rakutenDatabaseModel.name
+                  marker.snippet = rakutenDatabaseModel.placeDescription
+                  marker.map = self.mapView
+                }
+                
             }
             
         }

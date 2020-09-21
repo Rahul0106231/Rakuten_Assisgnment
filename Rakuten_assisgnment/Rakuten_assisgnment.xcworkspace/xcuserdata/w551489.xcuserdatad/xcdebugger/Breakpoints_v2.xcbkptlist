@@ -7,80 +7,32 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "4CB3123F-0128-4CA4-87CC-DC4B29EDB053"
+            uuid = "432431FC-A39A-4105-8DCB-982FFF570103"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Rakuten_assisgnment/Repostories/MapsRepository.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "96"
-            endingLineNumber = "96"
-            landmarkName = "getGeocodedLocationsForRakutenLocations(rakutenLocations:completionhandler:)"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "getRakutenLocations(completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "03D4E95A-9356-4306-A3C4-DE2FDC3B1B26"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Rakuten_assisgnment/ViewModels/MapsViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
-            landmarkName = "getRakutenLocationsData()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "03D4E95A-9356-4306-A3C4-DE2FDC3B1B26 - d803524801164d11"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Rakuten_assisgnment.UIResponseModel) -&gt; () in Rakuten_assisgnment.MapsViewModel.getRakutenLocationsData() -&gt; ()"
-                  moduleName = "Rakuten_assisgnment"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/w551489/Desktop/Rakuten_Assignment/Rakuten_Assisgnment/Rakuten_assisgnment/Rakuten_assisgnment/ViewModels/MapsViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "30"
-                  endingLineNumber = "30"
-                  offsetFromSymbolStart = "378">
-               </Location>
-               <Location
-                  uuid = "03D4E95A-9356-4306-A3C4-DE2FDC3B1B26 - d803524801164d11"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Rakuten_assisgnment.UIResponseModel) -&gt; () in Rakuten_assisgnment.MapsViewModel.getRakutenLocationsData() -&gt; ()"
-                  moduleName = "Rakuten_assisgnment"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/w551489/Desktop/Rakuten_Assignment/Rakuten_Assisgnment/Rakuten_assisgnment/Rakuten_assisgnment/ViewModels/MapsViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "30"
-                  endingLineNumber = "30"
-                  offsetFromSymbolStart = "420">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "A33D6A03-7A4E-40B8-8DFC-6A1CEF0E673C"
-            shouldBeEnabled = "Yes"
+            uuid = "B39C47D2-D413-4760-8FF8-9F33BDF2EA0F"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Rakuten_assisgnment/MapsViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
-            landmarkName = "dataRetrievedSuccesfully(mapsUIModel:)"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "dataRetrievedSuccesfullyFromDatabase(mapsDatamodel:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

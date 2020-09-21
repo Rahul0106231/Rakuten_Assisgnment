@@ -14,6 +14,8 @@ enum ServiceResponse {
     case failure(error:String)
 }
 
+//API Client to Make the service calls, Uses Alamofire
+
 class APIServicesClient {
     
     func getDataForLocationsRequest(locationsRequest:GetLocationsRequest, completion:@escaping(ServiceResponse) -> Void){
@@ -46,8 +48,6 @@ class APIServicesClient {
         let dataRequest = AF.request(requestUrl)
         dataRequest.responseDecodable(of: GeocodedLocations.self) { (response) in
           
-        let status = response.response?.statusCode
-          print("STATUS \(String(describing: status)) for request \(requestUrl)")
           guard let geoCodedLocations = response.value else {
             let serviceResponse = ServiceResponse.failure(error:response.error.debugDescription)
             completion(serviceResponse)

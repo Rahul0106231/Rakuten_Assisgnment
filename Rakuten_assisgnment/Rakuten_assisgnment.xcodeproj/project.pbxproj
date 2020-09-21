@@ -26,6 +26,7 @@
 		EC4B183B25174BB50015FA2A /* RakutenLocations.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4B183A25174BB50015FA2A /* RakutenLocations.swift */; };
 		EC4B183D251795A60015FA2A /* RakutenMarkerUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4B183C251795A60015FA2A /* RakutenMarkerUIModel.swift */; };
 		EC4B183F25179DE40015FA2A /* GeocodedLocations.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4B183E25179DE40015FA2A /* GeocodedLocations.swift */; };
+		EC4B1849251861680015FA2A /* RakutenMarkerUIDatabaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4B1848251861680015FA2A /* RakutenMarkerUIDatabaseModel.swift */; };
 		F51E2B3E59C619599536ABFD /* Pods_Rakuten_assisgnmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27C55CA8C99F5BDFEB31743B /* Pods_Rakuten_assisgnmentTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +69,7 @@
 		EC4B183A25174BB50015FA2A /* RakutenLocations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RakutenLocations.swift; sourceTree = "<group>"; };
 		EC4B183C251795A60015FA2A /* RakutenMarkerUIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RakutenMarkerUIModel.swift; sourceTree = "<group>"; };
 		EC4B183E25179DE40015FA2A /* GeocodedLocations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeocodedLocations.swift; sourceTree = "<group>"; };
+		EC4B1848251861680015FA2A /* RakutenMarkerUIDatabaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RakutenMarkerUIDatabaseModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +193,7 @@
 				EC4B183A25174BB50015FA2A /* RakutenLocations.swift */,
 				EC4B183C251795A60015FA2A /* RakutenMarkerUIModel.swift */,
 				EC4B183E25179DE40015FA2A /* GeocodedLocations.swift */,
+				EC4B1848251861680015FA2A /* RakutenMarkerUIDatabaseModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -411,6 +414,7 @@
 				EC4B183F25179DE40015FA2A /* GeocodedLocations.swift in Sources */,
 				EC4B17E7251489330015FA2A /* MapsViewController.swift in Sources */,
 				EC4B183D251795A60015FA2A /* RakutenMarkerUIModel.swift in Sources */,
+				EC4B1849251861680015FA2A /* RakutenMarkerUIDatabaseModel.swift in Sources */,
 				EC4B183B25174BB50015FA2A /* RakutenLocations.swift in Sources */,
 				EC4B182B2517310B0015FA2A /* MapsViewModel.swift in Sources */,
 				EC4B17E3251489330015FA2A /* AppDelegate.swift in Sources */,

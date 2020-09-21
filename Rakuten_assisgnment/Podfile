@@ -7,7 +7,6 @@ target 'Rakuten_assisgnment' do
   pod 'Alamofire', '~> 5.2'
   pod 'GoogleMaps','= 3.9.0'
   pod 'GooglePlaces'
-  pod "KRProgressHUD"
   # Pods for Rakuten_assisgnment
 
   target 'Rakuten_assisgnmentTests' do

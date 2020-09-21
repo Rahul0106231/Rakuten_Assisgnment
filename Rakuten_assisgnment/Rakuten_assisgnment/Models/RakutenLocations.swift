@@ -27,23 +27,23 @@ struct DataClass: Codable {
 
 // MARK: - Item
 struct Item: Codable {
-    let type: TypeEnum
-    let uuid: String
-    let properties: Properties
+    let type: TypeEnum?
+    let uuid: String?
+    var properties: Properties?    
 }
 
 // MARK: - Properties
 struct Properties: Codable {
     let permalink, apiPath, webPath: String
     let apiURL: String
-    let name: String
+    var name: String
     let stockExchange, stockSymbol: String?
     let primaryRole: PrimaryRole
-    let shortDescription: String
-    let profileImageURL: String?
+    var shortDescription: String
+    var profileImageURL: String?
     let domain: String?
     let homepageURL, facebookURL, twitterURL, linkedinURL: String?
-    let cityName, regionName, countryCode: String?
+    var cityName, regionName, countryCode: String?
     let createdAt, updatedAt: Int
 
     enum CodingKeys: String, CodingKey {

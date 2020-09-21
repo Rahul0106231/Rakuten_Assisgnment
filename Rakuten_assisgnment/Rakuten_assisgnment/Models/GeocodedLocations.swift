@@ -1,5 +1,13 @@
 
 //
+//  GeocodedLocations.swift
+//  Rakuten_assisgnment
+//
+//  Created by Balimidi, Rahul on 20/09/20.
+//  Copyright © 2020 Balimidi, Rahul. All rights reserved.
+//
+
+//
 //   let geocodedLocations = try? newJSONDecoder().decode(GeocodedLocations.self, from: jsonData)
 
 import Foundation
@@ -16,7 +24,7 @@ struct Result: Codable {
     let formattedAddress: String
     let geometry: Geometry
     let placeID: String
-    let plusCode: PlusCode
+    let plusCode: PlusCode?
     let types: [String]
 
     enum CodingKeys: String, CodingKey {
